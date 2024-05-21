@@ -273,6 +273,14 @@ export default function Signup() {
             >
               Registrarse
             </button>
+
+            <span className="text-xs text-black mt-2">
+              {" "}
+              Ya tienes cuenta?{" "}
+              <a href="/login" className="text-blue-500">
+                Iniciar ahora
+              </a>
+            </span>
           </form>
         </div>
       </div>

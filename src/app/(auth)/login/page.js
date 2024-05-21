@@ -17,24 +17,27 @@ export default function Signup() {
 
   // CREACIÓ DE L'USUARI
   const onSubmit = handleSubmit(async (data) => {
-    console.log(data);
+    console.log("Data:", data);
+
     const res = await signIn("credentials", {
       email: data.email,
       password: data.password,
       redirect: false,
     });
 
+    console.log("Res:", res);
     if (res.error) {
       //   alert(res.error);
       setError(res.error);
     } else {
       router.push("/");
+      router.refresh();
     }
 
-    console.log(res);
+    // console.log(res);
   });
 
-  console.log(errors);
+  // console.log(errors);
 
   return (
     <main>
@@ -129,6 +132,14 @@ export default function Signup() {
             >
               Iniciar Session
             </button>
+
+            <span className="text-xs text-black mt-2">
+              {" "}
+              No tienes cuenta?{" "}
+              <a href="/signup" className="text-blue-500">
+                Unete ahora
+              </a>
+            </span>
           </form>
         </div>
       </div>

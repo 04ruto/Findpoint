@@ -1,3 +1,5 @@
+import Button from "@/components/button";
+
 export default function Home() {
   return (
     <main className="">
@@ -47,9 +49,10 @@ export default function Home() {
               cliente, sin importar su ubicación.
             </p>
           </div>
-          <button className="text-black uppercase py-2 text-base px-10 border-2 border-black rounded hover:bg-white transition duration-500">
+          <Button text="Comenzar" />
+          {/* <button className="text-black uppercase py-2 text-base px-10 border-2 border-black rounded hover:bg-white transition duration-500">
             Comenzar
-          </button>
+          </button> */}
         </div>
       </div>
 
@@ -81,9 +84,11 @@ export default function Home() {
                 expertos hoy mismo!
               </p>
               <a href="/contact" className="mt-8">
-                <button className="mt-8 text-black uppercase py-2 text-sm px-10 border-2 border-black rounded hover:bg-white transition duration-500">
+                <Button text="Habla con un experto" extraClasses={"mt-8"} />
+
+                {/* <button className="mt-8 text-black uppercase py-2 text-sm px-10 border-2 border-black rounded hover:bg-white transition duration-500">
                   Habla con un experto
-                </button>
+                </button> */}
               </a>
             </div>
           </div>
@@ -105,6 +110,12 @@ export default function Home() {
                 para brindarte el apoyo necesario para llevar tu negocio al
                 siguiente nivel. ¡Contáctanos hoy mismo para empezar!
               </p>
+
+              {/* <Button
+                text="Contacta con nosotros"
+                extraClasses={"mt-8 border-white hover:bg-black "}
+              /> */}
+
               <button className="mt-8 text-white uppercase py-2 text-sm px-10 border-2 border-white rounded hover:bg-black hover:bg-opacity-80 transition duration-500">
                 Contacta con nosotros
               </button>
@@ -153,9 +164,11 @@ export default function Home() {
                 innovación y el crecimiento. ¡Comienza tu transformación hoy
                 mismo!
               </p>
-              <button className="mt-8 text-black uppercase py-2 text-sm px-10 border-2 border-black rounded hover:bg-white transition duration-500">
+
+              <Button text="Descubre cómo" extraClasses={"mt-8"} />
+              {/* <button className="mt-8 text-black uppercase py-2 text-sm px-10 border-2 border-black rounded hover:bg-white transition duration-500">
                 Descubre cómo
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
